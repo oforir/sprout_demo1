@@ -1,0 +1,283 @@
+/* General styles */
+
+html {
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-account {
+  background-color: #dc0451;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-read-more {
+  display: block;
+  color: #007ac9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-read-more:hover {
+  color: black;
+}
+
+
+header,
+nav,
+div {
+  border: 1px solid black;
+}
+
+
+/* Header styles */
+
+header {
+  background-color: #ff7b35;
+  width: 100%;
+  height: 2.7rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .nav-link {
+  padding: 11px 8px;
+  color: white;
+}
+
+header .nav-link:hover {
+  color: #007ac9;
+  background-color: white;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+.hdr-nav-right .nav-account {
+  padding: 11px 8px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.hdr-nav-right .nav-link {
+  color: white;
+}
+
+.hdr-nav-right i {
+  font-size: 1.2rem;
+}
+
+#login-enter-link {
+  margin-left: 2.5rem;
+}
+
+#search-site {
+  margin-left: 0.75rem;
+}
+
+/* Subheader styles */
+
+.sub-header {
+  height: 6.5rem;
+  /*border: 1px solid black;*/
+  align-items: flex-end;
+}
+
+/*
+.sub-header div {
+  border: 1px solid grey;
+}
+*/
+
+.sub-hdr-left {
+  width: 290px;
+  height: auto;
+  align-items: flex-end;
+}
+
+.sub-hdr-left img {
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.sub-hdr-right {
+  flex-grow: 1;
+  height: 5rem;
+  align-items: center;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+  margin-bottom: 0.25rem;
+}
+
+.sub-hdr-right a {
+  color: black;
+  font-weight: bolder;
+}
+
+.sub-hdr-right a:hover {
+  color: #007ac9;
+}
+
+/* Main body styles */
+.main-body,
+.main-body article,
+.main-body section,
+.main-body div {
+  border: 1px solid grey;
+}
+
+.main-body {
+  height: auto;
+}
+
+@media only screen and (min-width: 960px) {
+  /* Main-body Media Querie for larger screens */
+
+  .body-left {
+    width: 75%;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .body-right {
+    width: 25%;
+  }
+
+} /* end of large screen Media Querie for main body */
+
+@media only screen and (max-width: 959px) {
+  /* Main-body Media Querie for smaller screens */
+
+  .body-left {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .body-right {
+    display: none;
+  }
+
+  } /* end of smaller screen Media Querie for main body */
+
+
+/* Article-level styles */
+
+article.hero {
+  width: 95.5%;
+  height: 428.75px;
+  padding-top: 0px;
+  padding-bottom: 0;
+  margin: 30px 8.9px 30px 8.9px;
+  background-image: url("../images/hero_artkl-img-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+article {
+  width: 47%;
+  height: 370px;
+  margin-right: 17.5px;
+  margin-bottom: 30px;
+}
+
+article.shrt.artkl {
+  height: 280px;
+}
+
+.s-img-banner {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.news-card {
+  position: relative;
+  display: ;
+  max-width: 75%;
+  height: 181px;
+  z-index: 1;
+  overflow: hidden;
+  padding: 25px;
+  margin: -80px auto;
+  background-color: white;
+  box-shadow: -8px -8px 18px -15px #000, 8px -8px 18px -15px #000;
+}
+
+.news-card:hover {
+  transform: scale(1.01);
+  transform-origin: center;
+  transition-duration: .05s;
+  transition-timing-function: ease-in-out;
+  color: #007ac9;
+  cursor: pointer;
+}
+
+.news-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.hero .news-card {
+  position: static;
+  height: 80%;
+  max-width: 35%;
+  padding: 18px 25px 25px 25px;
+  margin: 20px 15px;
+}
+
+.hero .nav-read-more {
+  text-align: right;
+  margin-top: 120px;
+}
+
+.shrt .news-card {
+  height: 86px;
+  padding: 18px 25px 25px 25px;
+  margin-top: -68px;
+}
+
+.dnd-stamp {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #b2b2b2;
+  margin: 7px 0;
+}
+
+.art-intro {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 0;
+}
+
+/* Right-side articles styles */
+
+.body-right {
+  padding-top: 22px;
+}
+
+#hr-advert {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
