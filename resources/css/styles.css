@@ -37,12 +37,16 @@ html {
   color: black;
 }
 
+h2 {
+  font-size: 23px;
+}
 
 header,
 nav,
 div {
   border: 1px solid black;
 }
+
 
 
 /* Header styles */
@@ -280,4 +284,78 @@ article.shrt.artkl {
 #hr-advert {
   max-width: 100%;
   margin-bottom: 20px;
+}
+
+.pr-box {
+  max-width: 100%;
+  height: auto;
+  padding: 23px 20px 10px 20px;
+}
+
+.pr-box h2 {
+  color: #007ac9;
+  margin-bottom: 15px;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+div.press-release {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: solid 1px rgba(71,31,32,0.15);
+}
+
+.hero-pr.press-release a {
+  font-size: 16px;
+  padding-top: 0px;
+}
+
+.hero-pr img {
+  width: 69px;
+  height: 69px;
+  padding-right: 15px;
+}
+
+.press-release a {
+  padding: 14px 0px;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  line-height: 21px;
+}
+
+.press-release a:hover {
+  color: #007ac9;
+}
+
+.press-release.last a {
+  border-bottom: 0px;
+}
+
+.pr-box strong {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.quick-links {
+  display: block;
+  padding: 23px 20px;
+  margin-bottom: 25px;
+  background-color: #e9e9e9;
+  line-height: 21px;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  clear: both;
+  font: Tahoma;
+}
+
+.quick-links a:hover {
+  color: #007ac9;
 }
